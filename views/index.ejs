@@ -12,7 +12,10 @@
     <p>Welcome to <%= title %></p>
     <% messages.forEach((message) => { %>
     <article>
-      <p><%= `${message.text} -${message.user} (${message.added})` %></p>
+      <p>
+        <%= `${message.text}`%> <br />
+        <%=`-${message.user} (${message.added})` %>
+      </p>
     </article>
     <% }); %>
     <p><a href="/new" role="button">Add message</a></p>
