@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="dark">
   <head>
     <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
   </head>
-  <body>
+  <body class="container">
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <% messages.forEach((message) => { %>
-    <div class="message">
+    <article>
       <p><%= `${message.text} -${message.user} (${message.added})` %></p>
-    </div>
+    </article>
     <% }); %>
-    <p><a href="/new">Add message</a></p>
+    <p><a href="/new" role="button">Add message</a></p>
   </body>
 </html>
