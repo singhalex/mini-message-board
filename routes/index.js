@@ -4,12 +4,12 @@ const { DateTime } = require("luxon");
 
 const messages = [
   {
-    text: "Hi there!",
+    text: "Nothing is impossible, unless you can't do it.",
     user: "Amando",
     added: DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS),
   },
   {
-    text: "Hello World!",
+    text: "They don't think it be like it is, but it do.",
     user: "Charles",
     added: DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS),
   },
